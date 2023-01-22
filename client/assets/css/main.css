@@ -5,27 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-black: #111111;
-  --color-white-400: #FFFFFF;
-}
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  display: grid;
-  place-items: center;
-  font-weight: normal;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
 @layer base {
   body {
-    @apply dark:bg-gray-900 dark:text-gray-50 duration-200;
+    @apply grid place-items-center min-h-screen overflow-x-hidden font-normal dark:bg-gray-900 dark:text-gray-50 duration-200;
   }
 }
